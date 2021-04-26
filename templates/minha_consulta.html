@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+        {% for field in form_passagem.visible_fields %}
+                <p>{{field.label}} : {{field.value}}</p>
+        {% endfor %}
+        {% for pessoa in form_pessoa.visible_fields %}
+                <p>{{pessoa.label}} : {{pessoa.value}}</p>
+        {% endfor %}
+{% endblock%}
+    
